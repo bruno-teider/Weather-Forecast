@@ -1,17 +1,35 @@
-# Weather-Forecast
+# Weather Forecast
 
-Site simples de previsão do tempo feito com React, Jsx, Axios e OpenWeatherAPI. O site busca os dados meteorológicos da API e exibe para o usuário em uma interface simples.
+Simple Weather Forecast app made with React, Jsx, Axios and OpenWeatherAPI. The website gets wether data from the API and shows it to the user in a simple interface.
 
-![image](https://github.com/user-attachments/assets/55ff8fc4-4a46-491c-8eac-8916e5a0bdf5)
+![image](https://github.com/user-attachments/assets/4eccb055-683a-499b-90e3-1db31e3919f1)
 
-## Funcionalidades
-- Realiza a busca de dados meteorológicos para os próximos 6 dias
-- Exibe a temperatura atual, condição climática, sensação térmica, umidade, velocidade do vento, condições climáticas e temperaturas máximas e mínimas para os próximos dias da semana na cidade indicada
-- Imagem de fundo altera de acordo com a condição climática atual
-- Realiza o pedido de localização para o usuário para encontrar a cidade que irá exibir os dados
-- Campo de busca de cidade, com tratamento de erro com alerta usando Material-UI
-- Visual responsivo com diferentes resoluções, incluindo mobile
+## Features
+- Fetches weather data for the next 5 days from the OpenWeatherMap API
+- Display the temperature, feels like temperature, weather condition, humidity, wind speed, the max and min temperatures and weather condition for the next days in the chosen city
+- Background image changes based on the weather condition
+- Gets user location to show current city data (if the user allows)
+- Search bar to get data for other cities, with exception handling with an alert using Material-UI
+- Responsive visuals with different resolutions, including mobile
 
-![image](https://github.com/user-attachments/assets/84acdc5e-a68e-4da1-ad69-8dc2f1cdbb6f)
+![image](https://github.com/user-attachments/assets/a364445d-b3eb-41ce-8396-1ea733d70eac)
 
-## Execução
+## Running
+1. Clone the repository in your machine
+   
+2. Create a `.env` file in the root directory and add your OpenWeatherAPI Key there (you need a key that have acess to Daily Forecast 16 days):
+```bash
+REACT_APP_API_KEY=your_api_key_here
+```
+
+3. Install the dependencies:
+```
+npm install
+```
+
+4. Start the server and then it will open in your browser:
+```
+npm start
+```
+
+![image](https://github.com/user-attachments/assets/f5f52498-b2e7-4259-9f0b-9b1cde432fac)
